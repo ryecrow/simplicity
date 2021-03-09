@@ -1,4 +1,3 @@
-
 # html lang
 language: zh-CN
 
@@ -10,17 +9,17 @@ menu:
 
 # Social
 social:
-  email: 
+  email:
   stack-overflow:
   twitter:
   facebook:
   linkedin:
   google:
-  github: 
+  github:
   weibo:
   douban:
   zhihu:
-  jianshu: 
+  jianshu:
   pocket:
   tumblr:
   instagram:
@@ -32,11 +31,11 @@ logo_dark: /logo_dark.png
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/style.css
+  - /css/style.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/simple.js
+  - /js/simple.js
 
 # Site creation time
 since: 2017

@@ -4,19 +4,19 @@
         <span>
             <% var author = "iLiKE Theme"; if (config.author) { author = config.author %>
             <% } %>
-            <% if (theme.since) { 
+            <% if (theme.since) {
                 var start = theme.since;
-                var end = date(Date.now(),'YYYY'); 
+                var end = date(Date.now(), 'YYYY');
                 var cpTime = end
                 if (start < end) {
                     cpTime = start + " - " + end;
                 }
             %>
-                ©<%= cpTime%> <%= author%>
-            <% } else { 
-                var end = date(Date.now(),'YYYY');
+            ©<%= cpTime %> <%= author %>
+            <% } else {
+                var end = date(Date.now(), 'YYYY');
             %>
-                ©<%= end%> <%= author%>
+            ©<%= end %> <%= author %>
             <% } %>
         </span>
     </div>
@@ -26,5 +26,5 @@
         </span>
     </div>
     <script src="/js/jquery.min.js"></script>
-    <%-partial('partials/counter') %>
+    <%- partial('partials/counter') %>
 </div>

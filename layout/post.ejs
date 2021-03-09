@@ -1,48 +1,48 @@
-<h1 class="post-title"><%=page.title%></h1>
+<h1 class="post-title"><%= page.title %></h1>
 <div class="post-meta">
-  <% if (page.date) { %>
-    <span>
+    <% if (page.date) { %>
+        <span>
       <i class="fa fa-calendar" aria-hidden="true"></i>
-      <%=date(page.date)%>
+      <%= date(page.date) %>
     </span>
-  <% } %>
+    <% } %>
 
-  <% if (page.author) { %>
-    <span>
+    <% if (page.author) { %>
+        <span>
       <i class="fa fa-pencil" aria-hidden="true"></i>
-      <%=page.author%>
+      <%= page.author %>
     </span>
-  <% } %>
+    <% } %>
 
-  <% if (page.categories && page.categories.length){ %>
-    <%
-      var cats = [];
-      page.categories.forEach(function(cat){
-          cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
-      });
-    %>
+    <% if (page.categories && page.categories.length){ %>
+        <%
+            var cats = [];
+            page.categories.forEach(function (cat) {
+                cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+            });
+        %>
 
-    <span>
+        <span>
       <i class="fa fa-inbox" aria-hidden="true"></i>
         <%- cats.join(', ') %>
     </span>
-  <% } %>
+    <% } %>
 
-  <% if (page.tags && page.tags.length){ %>
-  <%
-      var tags = [];
-      page.tags.forEach(function(tag){
-          tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
-      });
-  %>
+    <% if (page.tags && page.tags.length){ %>
+        <%
+            var tags = [];
+            page.tags.forEach(function (tag) {
+                tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+            });
+        %>
 
-    <span>
+        <span>
       <i class="fa fa-tags" aria-hidden="true"></i>
         <%- tags.join(', ') %>
     </span>
-  <% } %>
+    <% } %>
 </div>
 <article class="post markdown-style">
-  <%-page.content%>
+    <%- page.content %>
 </article>
-<%-partial('partials/paginator') %>
+<%- partial('partials/paginator') %>

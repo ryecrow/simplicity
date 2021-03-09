@@ -1,6 +1,7 @@
 # Simplicity
 
-*Simplicity* is a **minimalistic** theme for [Hexo](https://hexo.io) based on [CaiChenghan's iLiKE theme](https://github.com/CaiChenghan/iLiKE/)
+*Simplicity* is a **minimalistic** theme for [Hexo](https://hexo.io) based
+on [CaiChenghan's iLiKE theme](https://github.com/CaiChenghan/iLiKE/)
 
 ## What's the difference
 
@@ -9,9 +10,11 @@
 ## How to install
 
 Execute following command:
+
 ```bash
 $ git clone https://github.com/ryecrow/simplicity.git themes/simplicity
 ```
+
 Then modify corresponding lines in your hexo's `_config.yml` file:
 
 ```yaml
