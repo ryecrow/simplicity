@@ -28,6 +28,7 @@ social:
 # Miscelaneous
 favicon: /favicon.ico
 logo: /logo.png
+logo_dark: /logo_dark.png
 
 # stylesheets loaded in the <head>
 stylesheets:
