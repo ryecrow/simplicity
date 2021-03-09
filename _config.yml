@@ -10,24 +10,25 @@ menu:
 
 # Social
 social:
-  email: 
-  stack-overflow:
-  twitter:
-  facebook:
-  linkedin:
-  google:
-  github: 
-  weibo:
-  douban:
-  zhihu:
-  jianshu: 
-  pocket:
-  tumblr:
-  instagram:
+  email: abc@yah.csdf
+  stack-overflow: st
+  twitter: wtt
+  facebook: trete
+  linkedin: twert
+  google: rewtert
+  github: reterwte
+  weibo: gtrwet
+  douban: ertwe 
+  zhihu: erwtewrt
+  jianshu:  rewterwt
+  pocket: retrewt
+  tumblr: terwtrwet
+  instagram: erwtetwe
 
 # Miscelaneous
 favicon: /favicon.ico
 logo: /logo.png
+logo_dark: /logo_dark.png
 
 # stylesheets loaded in the <head>
 stylesheets:

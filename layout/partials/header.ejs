@@ -2,7 +2,12 @@
     <div class="menu">
       <div class="menu-left">
         <a href="/">
-          <img src="<%-theme.logo%>"></img>
+          <picture>
+            <% if (theme.logo_dark) { %>
+            <source srcset="<%-theme.logo_dark%>" media="(prefers-color-scheme: dark)">
+            <% } %>
+            <img src="<%-theme.logo%>"></img>
+          </picture>
         </a>
       </div>
       <div class="menu-right">
