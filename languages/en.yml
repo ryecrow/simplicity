@@ -1,0 +1,17 @@
+menu:
+  home: Home
+  archives: Archives
+  tags: Tags
+  categories: Categories
+  about: About
+
+posts:
+  prev: Previous
+  next: Next
+  prev_post: Previous
+  next_post: Next
+  posted: Posted by
+  post_date_prep: on
+  visits: Visits
+  reward: Reward
+  untitled: No title

@@ -1,0 +1,48 @@
+<h1 class="post-title"><%=page.title%></h1>
+<div class="post-meta">
+  <% if (page.date) { %>
+    <span>
+      <i class="fa fa-calendar" aria-hidden="true"></i>
+      <%=date(page.date)%>
+    </span>
+  <% } %>
+
+  <% if (page.author) { %>
+    <span>
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+      <%=page.author%>
+    </span>
+  <% } %>
+
+  <% if (page.categories && page.categories.length){ %>
+    <%
+      var cats = [];
+      page.categories.forEach(function(cat){
+          cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+      });
+    %>
+
+    <span>
+      <i class="fa fa-inbox" aria-hidden="true"></i>
+        <%- cats.join(', ') %>
+    </span>
+  <% } %>
+
+  <% if (page.tags && page.tags.length){ %>
+  <%
+      var tags = [];
+      page.tags.forEach(function(tag){
+          tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+      });
+  %>
+
+    <span>
+      <i class="fa fa-tags" aria-hidden="true"></i>
+        <%- tags.join(', ') %>
+    </span>
+  <% } %>
+</div>
+<article class="post markdown-style">
+  <%-page.content%>
+</article>
+<%-partial('partials/paginator') %>

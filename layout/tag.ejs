@@ -1,0 +1,16 @@
+<div class="tag post-list">
+  <h3><%=_p('menu.tags')%>: <%=page.tag%></h3>
+  <ul>
+  <% page.posts.each(function(article) { %>
+    <li>
+      <time><%=date(article.date)%></time>
+      <a href="<%- config.root %><%- article.path %>">
+        <%- article.title ? article.title : __('posts.untitled') %>
+      </a>
+    </li>
+  <% }) %>
+  </ul>
+</div>
+
+<%-partial('partials/paginator') %>
+
