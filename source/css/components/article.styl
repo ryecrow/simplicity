@@ -1,3 +1,5 @@
+@import "../base/palette.styl"
+
 .post
   width: 100%
 
@@ -35,3 +37,15 @@
   max-width: none
   width: auto
   transform: none
+
+.post blockquote
+  border-left: 0.25em solid #dfe2e5
+  padding: 20px
+  color: #b4b4b4
+  background-color: #f7f7f7
+  margin: 0 0 6px 0
+
+@media (prefers-color-scheme dark)
+  .post blockquote
+    border-left-color $Article_Blockquote_Border_Color_Dark !important
+    background-color $Article_Blockquote_Background_Dark

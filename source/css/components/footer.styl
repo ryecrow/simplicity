@@ -1,4 +1,5 @@
-/**********导航尾**********/
+@import "../base/palette.styl"
+
 .footer
   width: 100%
   background-color: #f2f2f2
@@ -36,7 +37,7 @@
 
 @media (prefers-color-scheme dark)
   .footer
-    background-color: #333
+    background-color $Component_Color_Dark
 
   .footer span, .footer span a
-    color: #eee
+    color $Foreground_Color_Dark

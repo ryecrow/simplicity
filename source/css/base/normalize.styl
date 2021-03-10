@@ -1,3 +1,5 @@
+@import "palette.styl"
+
 body, a, p, ul, li, h1, h2, h3, h4, h5, h6
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Source Han Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif
   margin: 0
@@ -20,20 +22,14 @@ span
 img
   width: 100%
 
-blockquote
-  border-left: 0.25em solid #dfe2e5
-  padding: 20px
-  color: #b4b4b4
-  background-color: #f7f7f7
-  margin: 0 0 6px 0
 
 @media (prefers-color-scheme dark)
   body
-    background-color: #1e1e1e
-    color: #dedede
+    background-color: $Background_Color_Dark
+    color: $Foreground_Color_Dark
 
-  a, span
-    color: #eee
+  a
+    color: $Link_Color_Dark
 
-  p
-    color: #dedede
+  p, span
+    color: $Foreground_Color_Dark

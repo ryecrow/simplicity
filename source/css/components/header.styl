@@ -1,3 +1,5 @@
+@import "../base/palette.styl"
+
 .header
   width: 100%
   background-color: #f2f2f2
@@ -30,7 +32,7 @@
 
 @media (prefers-color-scheme dark)
   .header
-    background-color: #333
+    background-color $Component_Color_Dark
 
   .header span, .menu a
-    color: #eee
+    color: $Foreground_Color_Dark
