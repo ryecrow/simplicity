@@ -5,7 +5,11 @@ on [CaiChenghan's iLiKE theme](https://github.com/CaiChenghan/iLiKE/)
 
 ## What's the difference
 
-> To be implemented.
+- Add support for dark mode
+- Post page now displays meta data (categories, tags, etc)
+- Improved translation
+- Style refinement
+- You name it
 
 ## How to install
 
