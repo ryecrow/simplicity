@@ -1,42 +1,43 @@
-/**********导航尾**********/
+@import "../base/palette.styl"
+
 .footer
-    width: 100%
-    background-color: #f2f2f2
-    text-align: center
-    padding: 20px 0 20px
+  width: 100%
+  background-color: #f2f2f2
+  text-align: center
+  padding: 20px 0 20px
 
 .footer .container
-    min-height: 0px
-    margin: 0 auto 0
+  min-height: 0px
+  margin: 0 auto 0
 
 .footer a
-    text-decoration: none
-    line-height: 30px
+  text-decoration: none
+  line-height: 30px
 
 .copyright
-    overflow: auto
+  overflow: auto
 
 .social
-    text-align: center
+  text-align: center
 
 .social-list
-    overflow: auto
-    margin: 0
-    padding: 0
-    display: inline-block
+  overflow: auto
+  margin: 0
+  padding: 0
+  display: inline-block
 
 .social li
-    list-style-type: none
-    float: left
-    margin: 0 4px 0
+  list-style-type: none
+  float: left
+  margin: 0 4px 0
 
 .powered a
-    color: #333333
-    font-weight:700
+  color: #333333
+  font-weight: 700
 
 @media (prefers-color-scheme dark)
-    .footer
-        background-color: #333
+  .footer
+    background-color $Component_Color_Dark
 
-    .footer span, .footer span a
-        color: #eee
+  .footer span, .footer span a
+    color $Foreground_Color_Dark

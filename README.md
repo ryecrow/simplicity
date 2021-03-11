@@ -1,17 +1,24 @@
 # Simplicity
 
-*Simplicity* is a **minimalistic** theme for [Hexo](https://hexo.io) based on [CaiChenghan's iLiKE theme](https://github.com/CaiChenghan/iLiKE/)
+*Simplicity* is a **minimalistic** theme for [Hexo](https://hexo.io) based
+on [CaiChenghan's iLiKE theme](https://github.com/CaiChenghan/iLiKE/)
 
 ## What's the difference
 
-> To be implemented.
+- Add support for dark mode
+- Post page now displays meta data (categories, tags, etc)
+- Improved translation
+- Style refinement
+- You name it
 
 ## How to install
 
 Execute following command:
+
 ```bash
 $ git clone https://github.com/ryecrow/simplicity.git themes/simplicity
 ```
+
 Then modify corresponding lines in your hexo's `_config.yml` file:
 
 ```yaml

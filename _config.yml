@@ -1,4 +1,3 @@
-
 # html lang
 language: zh-CN
 
@@ -10,20 +9,20 @@ menu:
 
 # Social
 social:
-  email: abc@yah.csdf
-  stack-overflow: st
-  twitter: wtt
-  facebook: trete
-  linkedin: twert
-  google: rewtert
-  github: reterwte
-  weibo: gtrwet
-  douban: ertwe 
-  zhihu: erwtewrt
-  jianshu:  rewterwt
-  pocket: retrewt
-  tumblr: terwtrwet
-  instagram: erwtetwe
+  email:
+  stack-overflow:
+  twitter:
+  facebook:
+  linkedin:
+  google:
+  github:
+  weibo:
+  douban:
+  zhihu:
+  jianshu:
+  pocket:
+  tumblr:
+  instagram:
 
 # Miscelaneous
 favicon: /favicon.ico
@@ -32,11 +31,11 @@ logo_dark: /logo_dark.png
 
 # stylesheets loaded in the <head>
 stylesheets:
-- /css/style.css
+  - /css/style.css
 
 # scripts loaded in the end of the body
 scripts:
-- /js/simple.js
+  - /js/simple.js
 
 # Site creation time
 since: 2017
