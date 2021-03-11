@@ -1,9 +1,9 @@
 <!--page counter part-->
 <script>
     function addCount(Counter) {
-        url = $('.article-date').attr('href').trim();
-        title = $('.article-title').text().trim();
-        var query = new AV.Query(Counter);
+        const url = $('.article-date').attr('href').trim();
+        const title = $('.article-title').text().trim();
+        const query = new AV.Query(Counter);
         //use url as unique idnetfication
         query.equalTo("url", url);
         query.find({

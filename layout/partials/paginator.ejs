@@ -8,7 +8,7 @@
     var nextLink = currentPage + 1 > 1 ? "/page/" + (currentPage + 1) : "/";
 %>
 <div class="paginator">
-    <% if (currentPage == 0 || currentPage == 1) { %>
+    <% if (currentPage === 0 || currentPage === 1) { %>
         <a class="extend prev-none"><%= _p('posts.prev') %></a>
     <% } %>
     <% if (currentPage > 1) { %>
@@ -16,15 +16,15 @@
     <% } %>
 
     <% for (var i = startPage; i <= endPage; i++) { %>
-        <% if (i == currentPage) { %>
+        <% if (i === currentPage) { %>
             <span class="extend page-item page-item-select"><%= i %></span>
         <% } %>
-        <% if (i != currentPage) { var pageUrl = (i > 1 ? "/page/" + i : "/") %>
+        <% if (i !== currentPage) { var pageUrl = (i > 1 ? "/page/" + i : "/") %>
         <a class="extend page-item page-item-normal" href="<%= pageUrl %>"><%= i %></a>
         <% } %>
     <% } %>
 
-    <% if (currentPage == totalPage) { %>
+    <% if (currentPage === totalPage) { %>
         <a class="extend next-none"><%= _p('posts.next') %></a>
     <% } %>
     <% if (currentPage < totalPage) { %>

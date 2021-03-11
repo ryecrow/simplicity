@@ -25,6 +25,15 @@
             Powered by <a href="https://hexo.io">Hexo</a>
         </span>
     </div>
-    <script src="/js/jquery.min.js"></script>
-    <%- partial('partials/counter') %>
 </div>
+
+<script src="/js/jquery.min.js"></script>
+<% if (theme.leancloud) { %>
+    <%- partial('partials/counter') %>
+<% } %>
+<% if (theme.scripts && theme.scripts.length > 0) { %>
+    <!-- Customized scripts -->
+    <% theme.scripts.forEach(function(url) { %>
+        <script src="<%= url %>"></script>
+    <% }); %>
+<% } %>

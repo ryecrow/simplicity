@@ -2,7 +2,7 @@
     <ul class="social-list">
         <% Object.keys(theme.social).forEach(function(key) { %>
             <% var value = theme.social[key]; if (value) { %>
-                <% var target = "_self"; if (key == "email") { value = "mailto:" + value; target = "_blank"; %>
+                <% var target = "_self"; if (key === "email") { value = "mailto:" + value; target = "_blank"; %>
                 <% } %>
                 <li>
                     <a href="<%= value %>" title="<%= key %>" target="<%= target %>">

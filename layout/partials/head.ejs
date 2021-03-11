@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<% var pageLanguage = config.language || theme.language; %>
-<html lang="<%= pageLanguage %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -12,10 +9,11 @@
     if (is_category()) pageTitle = _p('menu.categories') + ': ' + page.category;
     if (is_month()) pageTitle += ': ' + page.month + '/' + page.year;
     if (is_year()) pageTitle += ': ' + page.year;
-    %>
-    <title><%= pageTitle %></title>
-    <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
-        <!-- stylesheets list from config.yml -->
+    %><title><%= pageTitle %></title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <% if (theme.stylesheets && theme.stylesheets.length > 0) { %>
+        <!-- Customized stylesheets -->
         <% theme.stylesheets.forEach(function(url) { %>
             <link rel="stylesheet" href="<%= url %>">
         <% }); %>
