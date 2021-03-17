@@ -57,7 +57,7 @@
     margin 0
 
     table
-      background-color #f6f8fa
+      background-color $Background_Color
 
       td.code
         padding 0
@@ -183,3 +183,11 @@
   .post blockquote
     border-left-color $Article_Blockquote_Border_Color_Dark !important
     background-color $Article_Blockquote_Background_Dark
+
+  .markdown-style
+    /* Code block */
+    figure table
+      background-color $Background_Color_Dark
+
+    figure table tr
+      border-style none

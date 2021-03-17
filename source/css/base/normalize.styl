@@ -33,18 +33,26 @@ table
   border-collapse collapse
 
 table th
-  font-weight 600
+  font-weight 700
 
 table th, table td
   padding 6px 13px
-  border 1px solid #dfe2e5
+  //border 1px solid #dfe2e5
 
 table tr
-  background-color #fff
+  background-color $Background_Color_Highlight
   border-top 1px solid #c6cbd1
 
 table tr:nth-child(2n)
-  background-color #f6f8fa
+  background-color $Background_Color
+
+table thead tr
+  border-width 2px 0 2px
+  border-color #c6cbd1
+  border-style solid
+
+table tbody tr:last-child
+  border-bottom 2px solid #c6cbd1
 
 table img
   background-color transparent
@@ -148,3 +156,9 @@ span.float-right > span
 
   p, span
     color: $Foreground_Color_Dark
+
+  table tr
+    background-color $Background_Color_Dark
+
+  table tr:nth-child(2n)
+    background-color $Background_Color_Highlight_Dark
